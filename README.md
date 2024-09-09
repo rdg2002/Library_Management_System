@@ -151,7 +151,7 @@ ON ist.issued_book_isbn = b.isbn
 GROUP BY b.isbn, b.book_title;
 ```
 
-**Task 7. **Retrieve All Books in a Specific Category**:
+**Task 7. Retrieve All Books in a Specific Category**:
 
 ```sql
 SELECT * FROM books
@@ -198,14 +198,14 @@ employees as e2
 ON e2.emp_id = b.manager_id
 ```
 
-**Task 11. **Create a Table of Books with Rental Price Above a Certain Threshold**:
+**Task 11. Create a Table of Books with Rental Price Above a Certain Threshold**:
 ```sql
 CREATE TABLE expensive_books AS
 SELECT * FROM books
 WHERE rental_price > 7.00;
 ```
 
-**Task 12: **Retrieve the List of Books Not Yet Returned**
+**Task 12: Retrieve the List of Books Not Yet Returned**
 ```sql
 SELECT * FROM issued_status as ist
 LEFT JOIN
